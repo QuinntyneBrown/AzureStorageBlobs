@@ -1,0 +1,4 @@
+{
+  "RootNamespace": "AzureStorageBlobs.Api",
+  "EntityFrameworkCore": "true"
+}
