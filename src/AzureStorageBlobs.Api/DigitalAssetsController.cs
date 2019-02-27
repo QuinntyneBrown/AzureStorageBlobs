@@ -17,7 +17,7 @@ namespace AzureStorageBlobs.Api
         public async Task<ActionResult<UploadDigitalAssetCommand.Response>> Upload()
             => await _mediator.Send(new UploadDigitalAssetCommand.Request());
 
-        [HttpGet("server/{id}")]
+        [HttpGet("server/{filename}")]
         public async Task<ActionResult<GetDigitalAssetByFileNameQuery.Response>> Serve(GetDigitalAssetByFileNameQuery.Request request)
             => await _mediator.Send(request);
     }
